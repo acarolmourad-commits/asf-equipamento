@@ -3,69 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASF Equipamento — Ecossistema ASF</title>
-<meta name="description" content="Guia de pranchas, wetsuits e acessórios para surfistas — satélite do app ASF.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/asf-equipamento/">
+<title>ASF Equipamento — Guia de pranchas e acessórios</title>
+<meta name="description" content="Guia de pranchas, wetsuits e acessórios para surfistas. Satélite do app ASF.">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f9ff;color:#0c4a6e;line-height:1.6}
-header{background:linear-gradient(135deg,#0ea5e9,#6366f1);color:#fff;padding:1rem 0}
-nav{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.4rem;padding:0 1rem}
-nav a{color:#e0f2fe;text-decoration:none;font-size:.85rem;padding:.35rem .7rem;border-radius:999px;background:rgba(255,255,255,.12)}
-nav a:hover{background:rgba(255,255,255,.3)}
-nav a.active{background:#fff;color:#0369a1;font-weight:700}
-.hero{text-align:center;padding:3rem 1rem 2rem}
-.hero .em{font-size:3.5rem}
-.hero h1{font-size:2.2rem;margin:.5rem 0}
-.hero p{max-width:640px;margin:0 auto;color:#155e75}
-section{max-width:900px;margin:0 auto;padding:1.5rem 1rem}
-.box{background:#fff;border-radius:1rem;padding:1.5rem;margin-bottom:1rem;box-shadow:0 2px 8px rgba(2,132,199,.08)}
-.box h2{color:#0369a1;margin-bottom:.5rem}
-.grid{max-width:1100px;margin:0 auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
-.card{background:#fff;border-radius:1rem;padding:1.2rem;text-decoration:none;color:#0c4a6e;box-shadow:0 2px 8px rgba(2,132,199,.08);transition:transform .15s}
-.card:hover{transform:translateY(-4px)}
-.card .ce{font-size:1.6rem}
-.card h3{margin:.3rem 0;color:#0369a1}
-.card p{font-size:.85rem;color:#64748b}
-footer{text-align:center;padding:2rem 1rem;color:#64748b;font-size:.85rem}
-footer a{color:#0284c7}
+:root{--rosa:#e63970;--areia:#fff5ee;--mar:#0b6e6e;--escuro:#12303a}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
+body{background:var(--areia);color:var(--escuro)}
+header{background:linear-gradient(135deg,var(--mar),#1fa39b);color:#fff;padding:2.5rem 1rem;text-align:center}
+header h1{font-size:2.2rem}header p{opacity:.95;margin-top:.5rem}
+nav{background:var(--escuro);display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;padding:.5rem;position:sticky;top:0;z-index:10}
+nav a{color:#fff;text-decoration:none;padding:.5rem .8rem;border-radius:.5rem;font-size:.9rem}
+nav a:hover,nav a.ativo{background:var(--rosa)}
+main{max-width:900px;margin:0 auto;padding:2rem 1rem}
+.card{background:#fff;border-radius:1rem;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.card h2{color:var(--mar);margin-bottom:.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.mini{background:var(--areia);border-radius:.75rem;padding:1rem}
+.mini h3{color:var(--rosa);font-size:1rem;margin-bottom:.4rem}
+footer{background:var(--escuro);color:#cfe;padding:1.5rem;text-align:center;font-size:.85rem;margin-top:2rem}
+footer a{color:#ff9ec0}
+.cta{display:inline-block;background:var(--rosa);color:#fff;padding:.7rem 1.4rem;border-radius:2rem;text-decoration:none;margin-top:.8rem}
 </style>
 </head>
 <body>
-<header><nav>
-      <a href="https://acarolmourad-commits.github.io/asf-app/">🌊 ASF App</a>
-      <a href="https://acarolmourad-commits.github.io/asf-praias/">🏖️ ASF Praias</a>
-      <a href="https://acarolmourad-commits.github.io/asf-previsao/">📈 ASF Previsão</a>
-      <a href="https://acarolmourad-commits.github.io/asf-treino/">🏄‍♀️ ASF Treino</a>
-      <a href="https://acarolmourad-commits.github.io/asf-eventos/">📅 ASF Eventos</a>
-      <a href="https://acarolmourad-commits.github.io/asf-glossario/">📖 ASF Glossário</a>
-      <a href="https://acarolmourad-commits.github.io/asf-comunidade/">💜 ASF Comunidade</a>
-      <a href="https://acarolmourad-commits.github.io/asf-seguranca/">🛟 ASF Segurança</a>
-      <a href="https://acarolmourad-commits.github.io/asf-equipamento/" class="active">🏄 ASF Equipamento</a>
-      <a href="https://acarolmourad-commits.github.io/asf-quiz/">🎯 ASF Quiz</a>
-</nav></header>
-<div class="hero"><div class="em">🏄</div><h1>ASF Equipamento</h1><p>Guia completo de pranchas, wetsuits e acessórios para surfistas — escolha o equipamento certo para o seu nível.</p></div>
-<section>
-<div class="box"><h2>🏄 Pranchas</h2><p><strong>Iniciantes:</strong> longboards e funboards (8'–9') oferecem estabilidade e remada fácil. <strong>Intermediárias:</strong> evolution e mini-long para transição. <strong>Avançadas:</strong> shortboards para manobras. Dica: volume em litros importa mais que o tamanho!</p></div>
-<div class="box"><h2>🩱 Wetsuits</h2><p>No litoral norte de SP, um long john 2mm ou short John resolve no verão; no inverno, prefira long arm 3/2mm. Confira vedação das costuras (flatlock vs. seladas) e flexibilidade nos ombros.</p></div>
-<div class="box"><h2>🎒 Acessórios</h2><p>Leash sempre no tamanho da prancha, parafina conforme a temperatura da água, protetor solar zinco (reef-safe), e capa de prancha para transporte. Veja condições no <a href="https://acarolmourad-commits.github.io/asf-previsao/">ASF Previsão</a> antes de escolher a parafina!</p></div>
-<div class="box"><h2>♀️ Dicas para surfistas</h2><p>Pranchas com mais volume ajudam na remada e na população de ondas em praias de beach break como Maresias e Camburi — confira o <a href="https://acarolmourad-commits.github.io/asf-praias/">ASF Praias</a>. Invista em um bom leash e revise o nó antes de cada sessão.</p></div>
-</section>
-<section class="box" style="text-align:center;background:linear-gradient(135deg,#e0f2fe,#ede9fe)">
-<h2>🌐 Explore o ecossistema ASF</h2>
-<p>Este site faz parte da rede de apps da <strong>ASF — Associação de Surf Feminino</strong>. Navegue entre os apps satélites:</p>
-</section>
-<div class="grid">
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-app/"><span class="ce">🌊</span><h3>ASF App</h3><p>App principal</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-praias/"><span class="ce">🏖️</span><h3>ASF Praias</h3><p>Guia de praias</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-previsao/"><span class="ce">📈</span><h3>ASF Previsão</h3><p>Ondas, vento e maré</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-treino/"><span class="ce">🏄‍♀️</span><h3>ASF Treino</h3><p>Treinos e progressão</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-eventos/"><span class="ce">📅</span><h3>ASF Eventos</h3><p>Calendário de competições</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-glossario/"><span class="ce">📖</span><h3>ASF Glossário</h3><p>Termos do surf</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-comunidade/"><span class="ce">💜</span><h3>ASF Comunidade</h3><p>Histórias e mentorias</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-seguranca/"><span class="ce">🛟</span><h3>ASF Segurança</h3><p>Segurança no mar</p></a>
-      <a class="card" href="https://acarolmourad-commits.github.io/asf-quiz/"><span class="ce">🎯</span><h3>ASF Quiz</h3><p>Quiz diário de surf</p></a>
-</div>
-<footer>Feito com 💜 pela ASF · <a href="https://acarolmourad-commits.github.io/asf-app/">App principal</a> · <a href="https://github.com/acarolmourad-commits/asf-equipamento">Código no GitHub</a></footer>
+<header><h1>🏄 ASF Equipamento</h1><p>Guia de pranchas, wetsuits e acessórios para surfistas</p></header>
+<nav>
+<a href="https://acarolmourad-commits.github.io/asf-app/">🏄‍♀️ App ASF</a>
+<a href="https://acarolmourad-commits.github.io/asf-praias/">🏖️ Praias</a>
+<a href="https://acarolmourad-commits.github.io/asf-previsao/">🌊 Previsão</a>
+<a href="https://acarolmourad-commits.github.io/asf-treino/">💪 Treino</a>
+<a href="https://acarolmourad-commits.github.io/asf-eventos/">📅 Eventos</a>
+<a href="https://acarolmourad-commits.github.io/asf-glossario/">📖 Glossário</a>
+<a href="https://acarolmourad-commits.github.io/asf-comunidade/">🌸 Comunidade</a>
+<a href="https://acarolmourad-commits.github.io/asf-seguranca/">🛟 Segurança</a>
+<a class="ativo" href="https://acarolmourad-commits.github.io/asf-equipamento/">🏄 Equipamento</a>
+<a href="https://acarolmourad-commits.github.io/asf-quiz/">❓ Quiz</a>
+<a href="https://acarolmourad-commits.github.io/asf-diario/">📝 Diário</a>
+<a href="https://acarolmourad-commits.github.io/asf-yoga/">🧘‍♀️ Yoga</a>
+<a href="https://acarolmourad-commits.github.io/asf-sos/">🆘 SOS</a>
+<a href="https://acarolmourad-commits.github.io/asf-eco/">🌱 Eco</a>
+</nav>
+<main>
+<div class="card"><h2>Escolha seu equipamento ideal 🏄‍♀️</h2><p>O equipamento certo acelera sua evolução. Combine este guia com seus <a href="https://acarolmourad-commits.github.io/asf-treino/">treinos</a> e a <a href="https://acarolmourad-commits.github.io/asf-previsao/">previsão das ondas</a>.</p><a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a></div>
+<div class="card"><h2>Pranchas por nível</h2><div class="grid">
+<div class="mini"><h3>Iniciante: Longboard / Funboard</h3><p>8'0"–9'0", volume alto, estabilidade para os primeiros drops.</p></div>
+<div class="mini"><h3>Intermediária: Evolution / Fish</h3><p>7'0"–7'6", mais manobrabilidade sem perder remada.</p></div>
+<div class="mini"><h3>Avançada: Shortboard</h3><p>5'8"–6'4", performance em ondas mais críticas.</p></div>
+</div></div>
+<div class="card"><h2>Wetsuits e acessórios</h2><div class="grid">
+<div class="mini"><h3>Wetsuit 3/2mm</h3><p>Curinga para o litoral de SP na maior parte do ano.</p></div>
+<div class="mini"><h3>Leash e quilhas</h3><p>Leash do tamanho da prancha; quilhas FCS/Futures conforme o estilo.</p></div>
+<div class="mini"><h3>Protetor e parafina</h3><p>Protetor solar zinco + parafina correta para a temperatura da água.</p></div>
+</div><p style="margin-top:.8rem">Dúvidas de termos? Consulte o <a href="https://acarolmourad-commits.github.io/asf-glossario/">Glossário ASF</a>.</p></div>
+</main>
+<footer>Parte do ecossistema <a href="https://acarolmourad-commits.github.io/asf-app/">ASF — Associação de Surf Feminino</a> · Publicado via GitHub Pages</footer>
 </body>
 </html>
