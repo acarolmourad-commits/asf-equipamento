@@ -3,30 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASF Equipamento — Guia de pranchas e acessórios</title>
-<meta name="description" content="Guia de pranchas, wetsuits e acessórios para surfistas. Satélite do app ASF.">
+<title>ASF Equipamento — Guia completo de pranchas, wetsuits e acessórios</title>
+<meta name="description" content="Guia completo de equipamento de surf feminino: pranchas por nível, tabela de volume, wetsuits por temperatura, acessórios, cuidados e opções eco. Satélite do app ASF.">
 <link rel="canonical" href="https://acarolmourad-commits.github.io/asf-equipamento/">
 <style>
 :root{--rosa:#e63970;--areia:#fff5ee;--mar:#0b6e6e;--escuro:#12303a}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
-body{background:var(--areia);color:var(--escuro)}
-header{background:linear-gradient(135deg,var(--mar),#1fa39b);color:#fff;padding:2.5rem 1rem;text-align:center}
-header h1{font-size:2.2rem}header p{opacity:.95;margin-top:.5rem}
-nav{background:var(--escuro);display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;padding:.5rem;position:sticky;top:0;z-index:10}
-nav a{color:#fff;text-decoration:none;padding:.5rem .8rem;border-radius:.5rem;font-size:.9rem}
-nav a:hover,nav a.ativo{background:var(--rosa)}
-main{max-width:900px;margin:0 auto;padding:2rem 1rem}
-.card{background:#fff;border-radius:1rem;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
-.card h2{color:var(--mar);margin-bottom:.6rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.mini{background:var(--areia);border-radius:.75rem;padding:1rem}
-.mini h3{color:var(--rosa);font-size:1rem;margin-bottom:.4rem}
+body{background:var(--areia);color:var(--escuro);line-height:1.55}
+header{background:linear-gradient(135deg,var(--mar),#1fa39b);color:#fff;padding:2.8rem 1rem;text-align:center}
+header h1{font-size:2.2rem}header p{opacity:.95;margin-top:.5rem;max-width:640px;margin-inline:auto}
+.badges{margin-top:1rem;display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
+.badges span{background:rgba(255,255,255,.18);padding:.3rem .8rem;border-radius:999px;font-size:.8rem;font-weight:600}
+main{max-width:920px;margin:0 auto;padding:2rem 1rem}
+.card{background:#fff;border-radius:1rem;padding:1.6rem;margin-bottom:1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.card h2{color:var(--mar);margin-bottom:.6rem;font-size:1.35rem}
+.card h3{color:var(--rosa);font-size:1.05rem;margin:.9rem 0 .35rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:.8rem}
+.mini{background:var(--areia);border-radius:.75rem;padding:1rem;border-left:4px solid var(--rosa)}
+.mini h3{color:var(--rosa);font-size:1rem;margin:0 0 .4rem}
+.mini p{font-size:.92rem}
 footer{background:var(--escuro);color:#cfe;padding:1.5rem;text-align:center;font-size:.85rem;margin-top:2rem}
 footer a{color:#ff9ec0}
-.cta{display:inline-block;background:var(--rosa);color:#fff;padding:.7rem 1.4rem;border-radius:2rem;text-decoration:none;margin-top:.8rem}
+.cta{display:inline-block;background:var(--rosa);color:#fff;padding:.7rem 1.4rem;border-radius:2rem;text-decoration:none;margin-top:.9rem;font-weight:600}
+.cta.sec{background:var(--mar)}
+.cta:hover{filter:brightness(1.1)}
+table{width:100%;border-collapse:collapse;margin-top:.8rem;font-size:.9rem}
+th,td{padding:.55rem .7rem;text-align:left;border-bottom:1px solid #eee}
+th{background:var(--mar);color:#fff;font-weight:600}
+tr:nth-child(even){background:#faf7f4}
+.tabela-wrap{overflow-x:auto}
+ul.lista{margin:.5rem 0 .5rem 1.2rem}
+ul.lista li{margin-bottom:.35rem;font-size:.94rem}
+details{border:1px solid #f0e0e6;border-radius:.6rem;padding:.7rem 1rem;margin-top:.6rem;background:#fff}
+details summary{cursor:pointer;font-weight:600;color:var(--mar)}
+details p{margin-top:.5rem;font-size:.93rem}
+.dica{background:#e8f6f3;border-left:4px solid var(--mar);border-radius:.5rem;padding:.8rem 1rem;margin-top:1rem;font-size:.93rem}
+a{color:var(--mar)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"ASF Equipamento","url":"https://acarolmourad-commits.github.io/asf-equipamento/","applicationCategory":"SportsApplication","operatingSystem":"Web","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"ASF — Associação Surf Feminino","url":"https://acarolmourad-commits.github.io/asf-app/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual prancha é ideal para iniciantes no surf?","acceptedAnswer":{"@type":"Answer","text":"Longboards e funboards de 8'0\" a 9'0\" com volume alto oferecem estabilidade e facilitam os primeiros drops."}},{"@type":"Question","name":"Como calcular o volume ideal da prancha?","acceptedAnswer":{"@type":"Answer","text":"O volume ideal depende do peso e do nível: iniciantes usam cerca de 100% do peso em litros, intermediárias 60-70% e avançadas 35-40%."}},{"@type":"Question","name":"Qual wetsuit usar no litoral de São Paulo?","acceptedAnswer":{"@type":"Answer","text":"A wetsuit 3/2mm é a curinga para a maior parte do ano no litoral paulista; no verão, short john ou licra UV costumam bastar."}},{"@type":"Question","name":"O que é uma prancha ecológica?","acceptedAnswer":{"@type":"Answer","text":"Pranchas eco usam blocos com poliol vegetal (como o bloco ecológico Phenix Teccel), resinas de base biológica e materiais recicláveis, reduzindo o impacto no oceano."}}]}
 </script>
 
 <!-- ========== SEO Padrão Google (rede ASF) ========== -->
@@ -37,12 +55,12 @@ footer a{color:#ff9ec0}
 <meta name="theme-color" content="#ff4d8d">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ASF — Associação de Surf Feminino">
-<meta property="og:title" content="ASF Equipamento — Guia de pranchas e acessórios">
-<meta property="og:description" content="Guia de pranchas, wetsuits e acessórios para surfistas. Satélite do app ASF.">
+<meta property="og:title" content="ASF Equipamento — Guia completo de pranchas, wetsuits e acessórios">
+<meta property="og:description" content="Pranchas por nível, tabela de volume, wetsuits por temperatura, acessórios e opções eco. Satélite do app ASF.">
 <meta property="og:url" content="https://acarolmourad-commits.github.io/asf-equipamento/">
 <meta property="og:locale" content="pt_BR">
-<meta name="twitter:title" content="ASF Equipamento — Guia de pranchas e acessórios">
-<meta name="twitter:description" content="Guia de pranchas, wetsuits e acessórios para surfistas. Satélite do app ASF.">
+<meta name="twitter:title" content="ASF Equipamento — Guia completo de pranchas, wetsuits e acessórios">
+<meta name="twitter:description" content="Pranchas por nível, tabela de volume, wetsuits por temperatura, acessórios e opções eco. Satélite do app ASF.">
 <!-- ========== Fim SEO ========== -->
 <meta property="og:image" content="https://acarolmourad-commits.github.io/thumbnails/asf-equipamento.jpg">
 <meta property="og:image:width" content="1200">
@@ -51,20 +69,95 @@ footer a{color:#ff9ec0}
 <meta name="twitter:image" content="https://acarolmourad-commits.github.io/thumbnails/asf-equipamento.jpg">
 </head>
 <body>
-<header><h1>🏄 ASF Equipamento</h1><p>Guia de pranchas, wetsuits e acessórios para surfistas</p></header>
+<header>
+<h1>🏄‍♀️ ASF Equipamento</h1>
+<p>Guia completo de pranchas, wetsuits e acessórios para surfistas — do primeiro drop à performance</p>
+<div class="badges"><span>🏄 Pranchas</span><span>🧮 Volume</span><span>🥷 Wetsuits</span><span>🌱 Eco</span><span>🧰 Cuidados</span></div>
+</header>
 
 <main>
-<div class="card"><h2>Escolha seu equipamento ideal 🏄‍♀️</h2><p>O equipamento certo acelera sua evolução. Combine este guia com seus <a href="https://acarolmourad-commits.github.io/asf-treino/">treinos</a> e a <a href="https://acarolmourad-commits.github.io/asf-previsao/">previsão das ondas</a>.</p><a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a></div>
-<div class="card"><h2>Pranchas por nível</h2><div class="grid">
-<div class="mini"><h3>Iniciante: Longboard / Funboard</h3><p>8'0"–9'0", volume alto, estabilidade para os primeiros drops.</p></div>
-<div class="mini"><h3>Intermediária: Evolution / Fish</h3><p>7'0"–7'6", mais manobrabilidade sem perder remada.</p></div>
-<div class="mini"><h3>Avançada: Shortboard</h3><p>5'8"–6'4", performance em ondas mais críticas.</p></div>
-</div></div>
-<div class="card"><h2>Wetsuits e acessórios</h2><div class="grid">
-<div class="mini"><h3>Wetsuit 3/2mm</h3><p>Curinga para o litoral de SP na maior parte do ano.</p></div>
-<div class="mini"><h3>Leash e quilhas</h3><p>Leash do tamanho da prancha; quilhas FCS/Futures conforme o estilo.</p></div>
-<div class="mini"><h3>Protetor e parafina</h3><p>Protetor solar zinco + parafina correta para a temperatura da água.</p></div>
-</div><p style="margin-top:.8rem">Dúvidas de termos? Consulte o <a href="https://acarolmourad-commits.github.io/asf-glossario/">Glossário ASF</a>.</p></div>
+<div class="card">
+<h2>Escolha seu equipamento ideal 🏄‍♀️</h2>
+<p>O equipamento certo acelera sua evolução e aumenta sua segurança no mar. Este guia cobre pranchas por nível, cálculo de volume, wetsuits por temperatura, acessórios essenciais e cuidados de manutenção. Combine com seus <a href="https://acarolmourad-commits.github.io/asf-treino/">treinos</a>, a <a href="https://acarolmourad-commits.github.io/asf-previsao/">previsão das ondas</a> e a calculadora de <a href="https://acarolmourad-commits.github.io/asf-volume/">volume de prancha</a>.</p>
+<a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a>
+<a class="cta sec" href="https://acarolmourad-commits.github.io/asf-volume/">Calcular meu volume</a>
+</div>
+
+<div class="card">
+<h2>Pranchas por nível</h2>
+<div class="grid">
+<div class="mini"><h3>🌊 Iniciante: Longboard / Funboard</h3><p>8'0"–9'0", volume alto, borda arredondada. Máxima estabilidade para aprender a remar, ficar em pé e fazer os primeiros drops.</p></div>
+<div class="mini"><h3>⚡ Intermediária: Evolution / Fish</h3><p>7'0"–7'6", mais manobrabilidade sem perder remada. Ideal para começar a trabalhar curvas e transições de base.</p></div>
+<div class="mini"><h3>🔥 Avançada: Shortboard</h3><p>5'8"–6'4", menos volume e mais performance em ondas críticas. Exige remada forte e boa técnica de leitura de onda.</p></div>
+<div class="mini"><h3>🌀 Alternativas: Mid-length / Twin</h3><p>6'6"–7'2", fluidez e estilo em ondas medianas. Uma ponte divertida entre o fun e a performance.</p></div>
+</div>
+
+<h3>📏 Tabela de volume de referência (litros por peso)</h3>
+<div class="tabela-wrap">
+<table>
+<tr><th>Peso</th><th>Iniciante</th><th>Intermediária</th><th>Avançada</th></tr>
+<tr><td>50 kg</td><td>50–60 L</td><td>32–38 L</td><td>22–26 L</td></tr>
+<tr><td>60 kg</td><td>60–70 L</td><td>38–45 L</td><td>26–30 L</td></tr>
+<tr><td>70 kg</td><td>70–85 L</td><td>45–52 L</td><td>30–34 L</td></tr>
+<tr><td>80 kg</td><td>85–95 L</td><td>52–60 L</td><td>34–38 L</td></tr>
+</table>
+</div>
+<div class="dica">💡 Regra prática: iniciante ≈ 100% do peso em litros · intermediária ≈ 60–70% · avançada ≈ 35–40%. Para um cálculo preciso, use a página <a href="https://acarolmourad-commits.github.io/asf-volume/">ASF Volume</a>.</div>
+</div>
+
+<div class="card">
+<h2>Wetsuits e acessórios</h2>
+<div class="grid">
+<div class="mini"><h3>🥷 Wetsuit 3/2mm</h3><p>A curinga do litoral de SP na maior parte do ano. No inverno mais rigoroso, considere 4/3mm com botinha.</p></div>
+<div class="mini"><h3>☀️ Verão: licra UV / short john</h3><p>Proteção solar e contra rash sem superaquecer. Combine sempre com protetor reef-safe.</p></div>
+<div class="mini"><h3>🔗 Leash e quilhas</h3><p>Leash do tamanho da prancha (6' para short, 9' para long). Quilhas FCS/Futures conforme peso e estilo de surf.</p></div>
+<div class="mini"><h3>🧴 Protetor e parafina</h3><p>Protetor solar de zinco (reef-safe) + parafina correta para a temperatura da água: tropical, morna, fria ou gelada.</p></div>
+</div>
+
+<h3>🌡️ Wetsuit por temperatura da água</h3>
+<div class="tabela-wrap">
+<table>
+<tr><th>Temperatura</th><th>Recomendação</th></tr>
+<tr><td>24°C+</td><td>Licra UV ou biquíni + protetor reef-safe</td></tr>
+<tr><td>21–24°C</td><td>Short john ou long john 2mm</td></tr>
+<tr><td>18–21°C</td><td>Long john 3/2mm</td></tr>
+<tr><td>14–18°C</td><td>Long john 4/3mm + botinha</td></tr>
+</table>
+</div>
+<p style="margin-top:.8rem">Dúvidas de termos? Consulte o <a href="https://acarolmourad-commits.github.io/asf-glossario/">Glossário ASF</a>.</p>
+</div>
+
+<div class="card">
+<h2>Equipamento eco-friendly 🌱</h2>
+<p>Sua prancha também pode proteger o oceano. O <strong>Bloco Ecológico Phenix Teccel</strong> é feito com poliol vegetal (50% derivado de plantas), 100% reciclável, sem CFC e mais durável que EPS comum — uma escolha consciente para shapers e para o mar.</p>
+<ul class="lista">
+<li>🌿 Blocos de PU com poliol vegetal e resinas bio-based</li>
+<li>♻️ Materiais recicláveis e produção com menos consumo de água</li>
+<li>🧴 Protetor solar reef-safe (sem oxibenzona e octinoxato)</li>
+<li>🏄‍♀️ Quilhas e pads de materiais reciclados</li>
+</ul>
+<a class="cta sec" href="https://acarolmourad-commits.github.io/asf-eco/">Conhecer a sessão ASF Eco</a>
+</div>
+
+<div class="card">
+<h2>Cuidados e manutenção 🧰</h2>
+<ul class="lista">
+<li>💦 Enxágue a prancha e o wetsuit com água doce após cada sessão</li>
+<li>🌤️ Nunca deixe a prancha exposta ao sol dentro do carro — o calor delamina o bloco</li>
+<li>🔧 Tampe furos e trincas rapidamente para evitar entrada de água no núcleo</li>
+<li>🧼 Lave o wetsuit com sabão neutro e seque à sombra, do avesso</li>
+<li>🕯️ Remova parafina velha a cada troca de estação para manter o grip</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Perguntas frequentes ❓</h2>
+<details><summary>Qual prancha é ideal para iniciantes?</summary><p>Longboards e funboards de 8'0" a 9'0" com volume alto: oferecem estabilidade, facilitam a remada e os primeiros drops.</p></details>
+<details><summary>Como calculo o volume ideal da minha prancha?</summary><p>Depende do seu peso e nível. Como referência: iniciante ≈ 100% do peso em litros, intermediária ≈ 60–70%, avançada ≈ 35–40%. Use a calculadora do <a href="https://acarolmourad-commits.github.io/asf-volume/">ASF Volume</a>.</p></details>
+<details><summary>Qual wetsuit usar no litoral de São Paulo?</summary><p>A 3/2mm atende a maior parte do ano. No verão, licra UV ou short john; no inverno rigoroso, 4/3mm com botinha.</p></details>
+<details><summary>Vale a pena investir em uma prancha ecológica?</summary><p>Sim! Blocos como o Phenix Teccel usam poliol vegetal, são recicláveis e mais duráveis — menor impacto no oceano e maior vida útil. Veja mais na página <a href="https://acarolmourad-commits.github.io/asf-eco/">ASF Eco</a>.</p></details>
+<details><summary>Com que frequência devo trocar o leash?</summary><p>Inspecione antes de cada sessão. Troque ao primeiro sinal de ressecamento ou corte — o leash é seu equipamento de segurança. Veja dicas no <a href="https://acarolmourad-commits.github.io/asf-seguranca/">ASF Segurança</a>.</p></details>
+</div>
 </main>
 <footer>Parte do ecossistema <a href="https://acarolmourad-commits.github.io/asf-app/">ASF — Associação de Surf Feminino</a> · Publicado via GitHub Pages</footer>
 
