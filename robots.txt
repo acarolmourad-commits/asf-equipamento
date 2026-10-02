@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://acarolmourad-commits.github.io/asf-equipamento/sitemap.xml
+Sitemap: https://equipamento.asf.surf/sitemap.xml
